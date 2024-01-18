@@ -1,0 +1,28 @@
+Color Palette Planning
+
+Primary Colors:
+- #3498db (Blue)
+- #e74c3c (Red)
+- #2ecc71 (Green)
+
+Secondary Colors:
+- #f39c12 (Orange)
+- #9b59b6 (Purple)
+- #1abc9c (Turquoise)
+
+Background Colors:
+- #ecf0f1 (Light Gray)
+- #34495e (Dark Gray)
+
+Text Colors:
+- #2c3e50 (Dark Text on Light Background)
+- #ecf0f1 (Light Text on Dark Background)
+
+Accent Colors:
+- #e67e22 (Accent for Calls-to-Action)
+- #95a5a6 (Subtle Accent)
+
+Link Colors:
+- #3498db (Standard Links)
+- #e74c3c (Hover or Active Links)
+
