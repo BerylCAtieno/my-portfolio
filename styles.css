@@ -12,4 +12,41 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     background-size: cover; 
     background-position: center;
   }
+
+  #logo-container>img {border-radius: 100%}
+  #logo-container {
+    margin-left: 2.5em; 
+    width: 50px; 
+    height: 50px; 
+    padding: 0;
+  }
+  #nav-bar-flex-container {
+    display: flex; 
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.75);
+    padding: 0.5em;
+    position: sticky;
+  }
+  
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1.5em;
+}
+#nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+  text-decoration: none;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
   
