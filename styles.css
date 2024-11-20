@@ -6,7 +6,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     position: relative;
     width: 100%;
     height: 100vh; /* Make the section full height */
-    background-image: url('./assets/favicons/molecule_bg.\ Vector\ illustration');
+    background-image: url('./assets/beryl-bg-main.jpg');
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -35,7 +35,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(128, 128, 128, 0.75); /* Semi-transparent overlay */
+    background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
     z-index: 1; /* Ensure it sits above the image */
 }
   
@@ -62,29 +62,49 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   transition: all 0.3s ease;
 }
 
-#nav-links a:hover {
+#nav-links a:hover, #nav-links a:active {
   color: #ff6363; /* Change text color on hover */
   transform: scale(1.1); /* Slightly enlarge the text */
   text-decoration: underline; /* Add underline */
   text-underline-offset: 5px; /* Adjust the distance of the underline */
   text-decoration-color: #ff6363; /* Make underline the same color as text */
+  text-decoration-thickness: 3px;
 }
 
 #intro-container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  max-width: 50vw;
-  left: 50vw;
-  top: 20vh;
   z-index: 5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  color: #ffffff;
+  margin-top: 20vh;
 }
 
-#intro-container h1 {
-  font-size: 2.5rem;
+#intro-name {
+  font-size: 120px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 7%;
 }
-#intro-container h1 span {color: #ff6363}
-  
+
+
+.playfair-display-intro-name {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.montserrat-intro-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  color: transparent; /* Makes the text itself transparent */
+  -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
+  text-shadow: none; /* Ensures no shadow obscures the effect */
+}
