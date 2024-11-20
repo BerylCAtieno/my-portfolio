@@ -1,5 +1,6 @@
 
 
+
 /* ---- reset ---- */ 
 body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
 #home {
@@ -67,7 +68,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
-  font-family: sans-serif, Helvetica, Arial;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -79,6 +80,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   text-underline-offset: 5px; /* Adjust the distance of the underline */
   text-decoration-color: #ff6363; /* Make underline the same color as text */
   text-decoration-thickness: 3px;
+  font-size: 1.2rem;
 }
 
 #intro-container {
@@ -88,7 +90,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   align-items: center;
   position: relative;
   z-index: 5;
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
 #intro-name {
@@ -121,17 +123,16 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 
 #about-flex-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding: 5%;
 }
 
 #who-i-am {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.1em;
   color: #ff6363;
 }
@@ -141,3 +142,56 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
   text-shadow: none; /* Ensures no shadow obscures the effect */
 }
+
+#names-stacked {
+  display: flex;
+  flex-direction: column;
+}
+#names-stacked span {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  color: #ff6363;
+}
+#names-stacked span:last-child {
+  color: transparent; /* Makes the text itself transparent */
+  -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
+  text-shadow: none; /* Ensures no shadow obscures the effect */
+}
+
+#socials-container svg {
+  width: 40px;
+  height: 40px;
+}
+#socials-container {
+  display: flex;
+  justify-content: center; /* Align items in the center */
+  gap: 20px; /* Add consistent spacing */
+  align-items: center; /* Vertically center the items */
+  padding: 10px;
+}
+
+
+.download-btn {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: white; /* Text color */
+  background-color: #ff6363; /* Theme color */
+  border: 2px solid #ff6363; /* Border matching the theme */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.download-btn:hover {
+  background-color: white; /* Invert theme color on hover */
+  color: #ff6363; /* Theme color for text */
+}
+
