@@ -24,9 +24,11 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     display: flex; 
     justify-content: space-between;
     padding: 0.5em;
-    position: sticky;
+    position: fixed;
     margin-top: 10px;
-    z-index: 2;
+    z-index: 10;
+    right: 0;
+    left: 0;
   }
   #home::before {
     content: '';
@@ -37,6 +39,14 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     height: 100%;
     background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
     z-index: 1; /* Ensure it sits above the image */
+}
+#about {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
+  z-index: -1;
 }
   
 
@@ -104,6 +114,29 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   font-style: normal;
   font-size: 3rem;
   letter-spacing: 0.1em;
+  color: transparent; /* Makes the text itself transparent */
+  -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
+  text-shadow: none; /* Ensures no shadow obscures the effect */
+}
+
+#about-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+#who-i-am {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  color: #ff6363;
+}
+
+#who-i-am span {
   color: transparent; /* Makes the text itself transparent */
   -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
   text-shadow: none; /* Ensures no shadow obscures the effect */
