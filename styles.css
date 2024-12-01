@@ -49,6 +49,15 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
   z-index: -1;
 }
+
+#skills {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.75); /* Semi-transparent overlay */
+  z-index: -1;
+}
   
 
   ul {
@@ -144,7 +153,17 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   margin-bottom: 10%;
 }
 
-#who-i-am span {
+#skills-title {
+  font-family: "Playfair Display", "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  color: #ff6363;
+}
+
+#who-i-am span, #skills-title span {
   color: transparent; /* Makes the text itself transparent */
   -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
   text-shadow: none; /* Ensures no shadow obscures the effect */
@@ -224,4 +243,18 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 .download-btn:hover {
   background-color: white;
   color: #ff6363; 
+}
+
+#skills * {border: 1px solid}
+
+#skills-flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+#skill-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5em;
 }
