@@ -161,6 +161,8 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   font-size: 4rem;
   letter-spacing: 0.1em;
   color: #ff6363;
+  text-align: center;
+  margin-bottom: 5%;  
 }
 
 #who-i-am span, #skills-title span {
@@ -245,7 +247,6 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   color: #ff6363; 
 }
 
-#skills * {border: 1px solid}
 
 #skills-flex-container {
   display: flex;
@@ -255,6 +256,39 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 
 #skill-card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5em;
+  max-width: 75%;
+  align-self: center;
+}
+
+.skills-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.skills-card {
+  background: rgba(255, 255, 255, 0.2); /* Translucent white background */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for realism */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+  width: 150px;
+}
+
+.skill-name {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ff6363;
+  font-size: 1.5em;
 }
