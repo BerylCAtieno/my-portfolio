@@ -296,6 +296,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 
 .project-container {
   gap: 5%;
+  justify-content: center;
 }
 
 .project-buttons > button {
