@@ -142,18 +142,11 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   padding: 5%;
 }
 
-#who-i-am {
-  font-family: "Playfair Display", "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-  letter-spacing: 0.1em;
-  color: #ff6363;
+#about-title {
   margin-bottom: 10%;
 }
 
-#skills-title {
+#skills-title, .section-title {
   font-family: "Playfair Display", "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -165,7 +158,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   margin-bottom: 5%;  
 }
 
-#who-i-am span, #skills-title span {
+.section-title > span {
   color: transparent; /* Makes the text itself transparent */
   -webkit-text-stroke: 2px #ff6363; /* Adds a blue outline with 2px thickness */
   text-shadow: none; /* Ensures no shadow obscures the effect */
@@ -291,4 +284,10 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   font-style: normal;
   color: #ff6363;
   font-size: 1.5em;
+}
+
+#portfolio {
+  background: rgba(128, 128, 128, 0.30);
+  z-index: -1;
+  padding: 4%;
 }
