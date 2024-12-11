@@ -167,7 +167,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 #names-stacked {
   flex-direction: column;
 }
-#names-stacked span {
+#names-stacked span, .project-title{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -175,6 +175,10 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   font-size: 1rem;
   letter-spacing: -0.05rem;
   color: #ff6363;
+}
+
+.project-title {
+  font-size: 1.5rem !important;
 }
 #names-stacked span:last-child {
   color: transparent; /* Makes the text itself transparent */
@@ -192,7 +196,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   color: #ff6363;
 }
 
-.about-me-paragraph p {
+.about-me-paragraph, .project-overview p {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -286,8 +290,53 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   background: rgba(128, 128, 128, 0.30);
   z-index: -1;
   padding: 4%;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .project-container {
-  border: 2px solid;
+  gap: 5%;
 }
+
+.project-buttons > button {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: white; /* Text color */
+  background-color: #ff6363; /* Theme color */
+  border: 2px solid #ff6363; /* Border matching the theme */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.project-buttons > button:hover {
+  background-color: white;
+  color: #ff6363; 
+}
+
+.project-buttons {
+  gap: 3%;
+}
+
+.project-title-and-overview {
+  flex-direction: column;
+  max-width: 40vw;
+  gap: 5%;
+  justify-content: center;
+}
+
+.project-image-container img {
+  border-radius: 25px;
+  width: 30vw;
+  height: auto;
+}
+
+.reverse {
+  direction: rtl; /* Reverses the reading direction */
+  text-align: right; /* Aligns the text to the right */
+}
+
