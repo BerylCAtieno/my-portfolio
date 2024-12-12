@@ -14,6 +14,17 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     background-position: center;
   }
 
+  #home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure it sits above the image */
+}
+
   .flex-container {
     display: flex;
   }
@@ -34,16 +45,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     right: 0;
     left: 0;
   }
-  #home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
-    z-index: 1; /* Ensure it sits above the image */
-}
+  
 #about {
   top: 0;
   left: 0;
@@ -299,7 +301,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   justify-content: center;
 }
 
-.project-buttons > button {
+.project-buttons > button, #contact-send-button {
   display: inline-block;
   padding: 7px 15px;
   font-size: 0.8rem;
@@ -340,4 +342,68 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   direction: rtl; /* Reverses the reading direction */
   text-align: right; /* Aligns the text to the right */
 }
+
+#contact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Make the section full height */
+  background-image: url('./assets/beryl-bg-main.jpg');
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.30); /* Semi-transparent overlay */
+  z-index: 1; /* Ensure it sits above the image */
+}
+
+#top-section {
+  background: rgba(128, 128, 128, 0.75); 
+  z-index: 2;
+  position: relative;
+  top: 0;
+  margin: 0;
+  border: 2px solid rgba(128, 128, 128, 0.75);
+}
+
+#contact-info-container {
+  background: #ff6363;
+  width: 25vw;
+  height: 80vh;
+  z-index: 20;
+  position: relative;
+  left: 15%;
+  top: -10%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+#contact-form-container {
+  flex-direction: column;
+  position: relative;
+  max-width: 40vw;
+  left: 50%;
+  bottom: 40%;
+}
+
+/* start here */
+
+.contact-form-main {
+  flex-direction: column;
+}
+
+footer {
+  background: #ff6363;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
 
