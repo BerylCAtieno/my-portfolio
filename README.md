@@ -1,3 +1,14 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+## TO DO
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+* Make logo sticky without affecting nav links
+* Add links to socials
+* Add downloadable CV
+* Improve self-introduction
+* Make read more work
+* Add real projects
+* Ensure message section works
+
+## TO STUDY
+* Making site responsive for mobile and tablet
+* Store content in separate file outside html
+* Manage assets' privacy
