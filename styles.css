@@ -35,11 +35,12 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
     width: 50px; 
     height: 50px; 
     padding: 0;
+    
   }
   #nav-bar-container {
     justify-content: space-between;
     padding: 0.5em;
-    position: fixed;
+    position: sticky;
     margin-top: 10px;
     z-index: 10;
     right: 0;
@@ -296,6 +297,8 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   gap: 100px;
 }
 
+#portfolio > div.section-title {margin-bottom: 0;}
+
 .project-container {
   gap: 5%;
   justify-content: center;
@@ -316,7 +319,7 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-.project-buttons > button:hover {
+.project-buttons > button:hover, #contact-send-button:hover {
   background-color: white;
   color: #ff6363; 
 }
@@ -373,29 +376,77 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   border: 2px solid rgba(128, 128, 128, 0.75);
 }
 
+.input-item {
+  background: rgba(128, 128, 128, 0.75);
+  width: 30vw;
+  border: none;
+  padding: 10px;
+}
+
+.name-email {
+  height: 5vh;
+}
+
+.input-message {
+  height: 15vh;
+}
+
+.input-item::placeholder {
+  color: rgb(247, 236, 236);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
 #contact-info-container {
   background: #ff6363;
   width: 25vw;
   height: 80vh;
   z-index: 20;
-  position: relative;
+  position: absolute;
   left: 15%;
-  top: -10%;
+  top: 25%; 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  flex-direction: column;
+  gap: 6%;
+  position: relative;
+  top: 20%;
+}
+
+.contact-info > div {
+  gap: 1.5rem;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.2em;
 }
 
 #contact-form-container {
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  width: 30vw;
   max-width: 40vw;
-  left: 50%;
+  left: 45%;
   bottom: 40%;
+  z-index: 20;
+  gap: 2%;
+  bottom: 10%;
 }
 
-/* start here */
+#contact-form-container > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ff6363;
+}
 
 .contact-form-main {
   flex-direction: column;
+  gap: 10px;
 }
 
 footer {

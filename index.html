@@ -82,7 +82,7 @@
     <!-- Skills Section Start -->
     <section id="skills">
         <div id="skills-container" class="flex-container">
-            <div id="skills-title" class="section-title">MY <span>SKILLS</span></div>
+            <div id="skills-title" class="section-title"><span>MY</span> SKILLS</div>
             <div id="skill-card-container">
                 <div class="skills-card flex-container">
                     <div class="skills-icon">
@@ -166,7 +166,7 @@
 
     <!-- Projects Section Start -->
     <section id="portfolio" class="flex-container">
-        <div id="portfolio-section-title" class="section-title">MY <span>PROJECTS</span></div>
+        <div id="portfolio-section-title" class="section-title"><span>MY</span> PROJECTS</div>
         <div class="project-container flex-container">
             <div class="project-title-and-overview flex-container">
                 <h2 class="project-title">Quickfire: A Quiz Playing Site</h2>
@@ -211,17 +211,21 @@
         <div id="top-section">
             <h1 class="section-title">CONTACT <span>ME</span></h1>
         </div>
-        <div id="contact-info-container" class="flex-container"></div>
-        <div id="contact-form-container" class="flex-container form-container">
-            <div><h1>Message</h1></div>
-            <div>
-                <form action="#" class="contact-form-main flex-container">
-                    <input type="text" name="full-name" id="full-name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" placeholder="Message" required></textarea>
-                    <button type="submit" id="contact-send-button">Send</button>
-                </form>
+        <div id="contact-info-container" class="flex-container">
+            <div class="contact-info flex-container">
+                <div class="flex-container"><img src="assets/call.png" alt="call icon" width="25px" height="25px">+245-704-454-824</div>
+            <div class="flex-container"><img src="assets/mail.png" alt="email icon" width="25px" height="25px">berylatieno30@gmail.com</div>
+            <div class="flex-container"><img src="assets/location.png" alt="location icon" width="25px" height="25px">Nairobi, Kenya</div>
             </div>
+        </div>
+        <div id="contact-form-container" class="flex-container">
+            <h1>Message</h1>
+            <form action="#" class="contact-form-main flex-container">
+                <div><input type="text" name="full-name" id="full-name" placeholder="Name" class="input-item name-email" required></div>
+                <div><input type="email" name="email" id="email" placeholder="Email" class="input-item name-email" required></div>
+                <div><textarea name="message" id="message" placeholder="Message" class="input-item input-message" required></textarea></div>
+                <div><button type="submit" id="contact-send-button">Send</button></div>
+            </form>
         </div>
     </section>
     <!-- Contact Section End -->
