@@ -18,3 +18,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// contact functionality
+
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("full-name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  try {
+      const response = await fetch("https://your-backend-url.com/send-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+          alert("Your message has been sent successfully!");
+      } else {
+          alert("There was an issue sending your message. Please try again.");
+      }
+  } catch (error) {
+      console.error("Error sending email:", error);
+      alert("An error occurred. Please try again.");
+  }
+});
