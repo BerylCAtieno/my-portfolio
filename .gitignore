@@ -1,2 +1,4 @@
 *.org
+.vscode
+.idx
 node_modules/
