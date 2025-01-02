@@ -257,6 +257,8 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   max-width: 80%;
   align-self: center;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-icon {
@@ -277,7 +279,22 @@ body { margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
   color: #fff;
   text-align: center;
   padding: 2em;
-  width: 10rem;
+  width: 8rem;
+}
+
+@media (max-width: 768px) {
+  #skill-card-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    padding: 1em;
+  }
+
+  .skills-card {
+    flex: 0 0 auto; /* Prevent cards from stretching */
+  }
 }
 
 .skill-name {
